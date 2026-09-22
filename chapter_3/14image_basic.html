@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>image_basic</title>
+</head>
+<body>
+    <h2>이미지 삽입하기</h2>
+    <img src="Penguins.jpg" alt="펭귄" width="300">
+    <img src="Nothing" alt="이미지 없음" width="300">
+    <img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA1MTJfMjQ2/MDAxNTg5MjE1ODQyNTc4.rd1dXSUMs-1ih1GlTTAFJ7Djbsg3uwCgrLaA7AVLt4cg.EsNYx0n_yIl9NfaC25SzFXAcjtGF8VXVNxMT30WkqSkg.JPEG.z12wow/CDB6097D-7EB4-45AF-B68F-89D1F4BCD85E-14234-0000041405E8FB31_file.jpg?type=w800" width="300">   
+    <img src="Haerin.jpg" alt="해린" width="300">
+
+    <h2>음악 삽입하기</h2>
+    <audio src="Kalimba.mp3" controls="controls"></audio/mp3>
+    
+    <h2>웹 브라우저 제약이 없도록 음악 삽입</h2>
+    <audio controls="controls">
+        <source src="Kalimba.mp3" type="audio/mp3">
+        <source src="Kalimba.ogg" type="audio/ogg">
+    </audio>
+
+    <h2>동영상 삽입하기</h2>
+    <video controls="controls">
+        <source src="Wildlife.mp4" type="video/mp4">
+        <source src="Wildlife.webm" type="video/webm">
+    </video>
+    
+    <h2>18 동영상 불러오는 동안 다른 이미지 보여주기</h2>
+    <video controls="controls" poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQizrge3OWFDddCF8SXprKm3eBgLeT-AmLyhZqLcVxehA&s=10">
+        <source src="Wildlife.mp4" type="video/mp4">
+        <source src="Wildlife.webm" type="video/webm">
+    </video>
+</body>
+</html>
