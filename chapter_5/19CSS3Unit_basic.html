@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <title>19CSS3Unit_basic</title>
+
+    <style>
+        /*2 %단위 적용하기
+        참고>>순서 바꾼 이유: nth-child()는 <p>a만 세는 게 아니라, 같은 부모 아래의 모든 형제 요소를 세기 때문*/
+        p:nth-child(1){font-size:100px }
+        p:nth-child(2){font-size: 100px;}
+        p:nth-child(3){font-size: 150px;}
+        p:nth-child(4){font-size: 200px;}
+        
+        /*3. em 단위 적용하기: 배수를 나타내는 단위,
+        1배= 1em=100%
+        1.5배= 1.5em=150%*/
+        p:nth-child(1){ font-size:1.0em}
+        p:nth-child(2){font-size: 1.0em;}
+        p:nth-child(3){font-size: 1.5em;}
+        p:nth-child(4){font-size: 2.0em;}
+
+        /*4. px 단위 적용하기: px단위는 크기를 절대적으로 지정함,
+        p태그의 기본 font-size 측정이 16px이므로 실행결과 같음*/
+        p:nth-child(1){font-size:16px }
+        p:nth-child(2){font-size: 16px;}
+        p:nth-child(3){font-size: 24px;}
+        p:nth-child(4){font-size: 32Spx;}
+
+        /*색상 단위*/
+        h1{background-color: rgb(255, 255, 0);}
+        
+        /*rgba색상: 알파값은 투명도, 0완전투명, 1.0완전 불투명 상태*/
+        h2{background-color:rgba(255, 255, 255, 0.5);}
+        
+        /*Hex코드: RGB색상 단위를 짧게 입력하는 방법, RGB색상 조합을 16진수로 입력*/
+        h3{background-color:#0094FF;}
+
+    </style>
+</head>
+<body>
+    <p>lorem ipsum dolor sit amet</p>
+    <p>lorem ipsum dolor sit amet</p>
+    <p>lorem ipsum dolor sit amet</p>
+    <p>lorem ipsum dolor sit amet</p>
+    
+    
+    <h1>ch05, CSS3기초 선택자와 단위</h1>
+    <h2>6. CSS3 단위</h2>
+    <h3>6.1 키워드 단위</h3>
+    <h3>6.2 크기 단위</h3>
+    <h3>6.3 색상 단위</h3>
+</body>
+</html>
